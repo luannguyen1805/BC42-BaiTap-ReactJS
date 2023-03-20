@@ -1,0 +1,42 @@
+.background {
+    background-image: url(../../public/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.border {
+    border: 2px solid #ccc;
+}
+
+.glassesPosition {
+    right: 18%;
+    bottom: 60%;
+    width: 140px;
+    opacity: 0.8;
+}
+
+.glassesInfo {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(253, 180, 127, .3);
+}
+
+.glassesName {
+    margin: 6px;
+    color: #fff;
+    font-size: 22px;
+    color: #9375c9;
+    font-weight: 700;
+}
+
+.glassesDesc {
+    margin: 0;
+    color: #eee;
+    font-size: 14px;
+}
+
+.margin{
+    margin: 0 150px;
+}

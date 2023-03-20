@@ -1,5 +1,7 @@
+import SelectGlasses from "./BT_SelectGlasses/SelectGlasses";
+
 function App() {
-  return <div className="App"></div>
+  return <div><SelectGlasses/></div>
 }
 
 export default App;
