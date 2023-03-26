@@ -4,7 +4,6 @@ import ShoeDetails from './ShoeDetails';
 import ShoeList from './ShoeList'
 
 function ShoeShop() {
-    const shoeList = [...data];
     const [selectedShoe, setSelectedShoe] = useState(null);
     const handleSelectedShoe = (shoe, isOpen = true) => {
         if(!shoe){
@@ -16,7 +15,7 @@ function ShoeShop() {
         <div>
             <div className="container">
                 <h1 className="text-center my-5">SHOE SHOP</h1>
-                <ShoeList shoes={shoeList} onSelectedShoe={handleSelectedShoe}/>
+                <ShoeList shoes={data} onSelectedShoe={handleSelectedShoe}/>
                 <ShoeDetails shoe={selectedShoe} isOpen={handleSelectedShoe}  />
             </div>
         </div>
