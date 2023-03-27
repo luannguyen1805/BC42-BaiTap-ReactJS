@@ -2,9 +2,13 @@ import React from 'react'
 import ShoeItem from './ShoeItem'
 
 
-function ShoeList({shoes, onSelectedShoe}) {
+function ShoeList({shoes, onSelectedShoe, onAddToCart}) {
     const handleSelectedShoe = (shoe) => {
         onSelectedShoe(shoe);
+    }
+
+    const handleAddToCart = (shoe) => {
+        onAddToCart(shoe);
     }
 
   return (
@@ -14,6 +18,7 @@ function ShoeList({shoes, onSelectedShoe}) {
                 <div key={shoe.id} className="col-sm-4">
                     <ShoeItem shoe={shoe}
                     onSelectedShoe={handleSelectedShoe}
+                    onAddToCart={handleAddToCart}
                     />
                 </div>
             );
