@@ -5,7 +5,7 @@ function SeatInfo() {
   const { listSeats } = useSelector(state => state.SeatsReducer);
   const dispatch = useDispatch();
   const handleCancelSeat = (soGhe) => {
-    dispatch({ type: "movie/book_seat", payload: {soGhe} });
+    dispatch({ type: "movie/cancel_seat", payload: {soGhe} });
   };
   const total = listSeats.reduce((result,seatInfo) => {
     return result + seatInfo.gia;

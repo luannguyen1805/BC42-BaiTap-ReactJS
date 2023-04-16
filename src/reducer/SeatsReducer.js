@@ -11,7 +11,7 @@ export const SeatsReducer = (state = initialState, action) => {
             : [...state.listSeats, action.payload];
             return {...state, listSeats: newListSeats};
         }
-        case "movie/book_seat" : {
+        case "movie/cancel_seat" : {
             const {soGhe} = action.payload;
             const newListSeats = state.listSeats.filter(seat => seat.soGhe !== soGhe);
             return {...state, listSeats: newListSeats}
